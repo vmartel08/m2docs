@@ -1,0 +1,23 @@
+site_name: Vincent's Site
+site_url: ""
+theme:
+  name: material
+  favicon: images/favicon.ico  
+  logo: assets/amazon-logo-png.png
+markdown_extensions:
+  - abbr
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+watch:
+  - includes
+repo_url: https://github.com/vmartel08  
